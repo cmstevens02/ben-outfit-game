@@ -1,0 +1,7 @@
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+https://www.geeksforgeeks.org/how-to-show-images-on-click-using-html/
+https://www.shecodes.io/athena/15247-how-to-change-the-src-in-img-after-clicking-button-with-addeventlistener
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
+https://stackoverflow.com/questions/4825295/onclick-to-get-the-id-of-the-clicked-button
+***https://www.w3docs.com/snippets/css/how-to-position-one-image-on-top-of-another-in-html-css.html#google_vignette 
+https://www.w3schools.com/html/html_css.asp

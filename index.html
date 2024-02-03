@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<style>
+    img {
+        height: 500px;
+    }
+
+    picture {
+        order: 1;
+    }
+
+    buttons {
+        order: 2;
+    }
+
+    sharerow {
+        flex: 1 auto;
+    }
+
+    itemtype {
+        grid-area: itemtype;
+    }
+
+    container {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        flex: 1 auto;
+
+    }
+
+    .base {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .hair-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 4;
+    }
+
+    .eyes-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    .mouth-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+
+    .shirt-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+</style>
+
+<script>
+
+    // method one
+    function changeHair(hairID) {
+        const hairImg = document.getElementById('hair');
+
+        switch (hairID) {
+            case 'younger-hair': hairImg.src = "/hair/youngerhair.png"; break;
+            default: hairImg.src = "/hair/olderhair.png"
+        }
+
+    }
+
+    //method 2 kinda simpler tbh 
+    function changeShirt(shirtURL) {
+        const shirtImg = document.getElementById('shirt');
+        shirtImg.src = shirtURL; 
+    }
+
+    
+    function changeEyes(eyesURL) {
+        const eyesImg = document.getElementById('eyes');
+        eyesImg.src = eyesURL; 
+    }
+
+    function changeMouth(mouthURL) {
+        const mouthImg = document.getElementById('mouth');
+        mouthImg.src = mouthURL; 
+    }
+
+
+
+
+</script>
+
+<html>
+
+<body>
+    <h1>Ben Dress Up Game</h1>
+
+    <container>
+        <sharerow class="sharerow picture">
+            <img class="base" src="/base.png" />
+            <img class="hair-layer" id="hair" src="/hair/olderhair.png">
+            <img class="eyes-layer" id="eyes" src="/eyes/openeyes.png">
+            <img class="mouth-layer" id="mouth" src="/mouths/closedmouth.png">
+            <img class="shirt-layer" id="shirt" src="/shirts/uniformshirt.png">
+            
+
+        </sharerow>
+
+        <sharerow class="sharerow buttons">
+
+            <div>
+                <h2>
+                    Hair Styles
+                </h2>
+                <button onclick="changeHair(this.id)" id="older-hair">
+                    Older Hair
+                </button>
+                <button onclick="changeHair(this.id)" id="younger-hair">
+                    Younger Hair
+                </button>
+            </div>
+
+            <div>
+                <h2>
+                    Eye Styles
+                </h2>
+                <button onclick="changeEyes('/eyes/openeyes.png')" id="open-eyes">
+                    Open Eyes
+                </button>
+                <button onclick="changeEyes('/eyes/closedeyes.png')" id="closed-eyes">
+                    Closed Eyes
+                </button>
+            </div>
+
+            <div>
+                <h2>
+                    Mouth Styles
+                </h2>
+                <button onclick="changeMouth('/mouths/openmouth.png')" id="open-smile">
+                    Open Smile
+                </button>
+                <button onclick="changeMouth('/mouths/closedmouth.png')" id="closed-smile">
+                    Closed Smile
+                </button>
+            </div>
+
+            <div>
+                <h2>
+                    Shirt Styles
+                </h2>
+                <button onclick="changeShirt('/shirts/uniformshirt.png')" id="uniform-shirt">
+                    Uniform Shirt
+                </button>
+                <button onclick="changeShirt('/shirts/uniformjacket.png')" id="uniform-jacket">
+                    Uniform Jacket
+                </button>
+                <button onclick="changeShirt('/shirts/redturtleneck.png')" id="red-turtleneck">
+                    Red Turtleneck
+                </button>
+                <button onclick="changeShirt('/shirts/jeanjacket.png')" id="jean-jacket">
+                    Jean Jacket
+                </button>
+                <button onclick="changeShirt('/shirts/catshirt.png')" id="cat-shirt">
+                    Cat shirt
+                </button>
+            </div>
+
+        </sharerow>
+    </container>
+
+</body>
+
+</html>

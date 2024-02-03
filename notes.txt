@@ -1,0 +1,21 @@
+// Christine Stevens
+// 2/3/2024
+
+drawing + programming took roughly 4.5 hrs
+
+learned: 
+- flexbox + z-indexes
+- using css classes
+- how to position an image on top of another image
+- how to use onclick functions
+- how to get document.getByElementId
+- how to change an img source
+- 
+
+
+TODO: 
+- toggle eyebags
+- cute selector buttons
+- get title back and actually make ui look nice
+- look into optimation with jsons (may need to do this in a framework or smth)
+- download final image
